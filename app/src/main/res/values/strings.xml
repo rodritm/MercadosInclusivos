@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">MercadosInclusivos</string>
+    <string name="hint_id">id</string>
+    <string name="hint_contraseña">contraseña</string>
+    <string name="id">Id:</string>
+    <string name="constraseña">Contraseña:</string>
 </resources>
+
+
