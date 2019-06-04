@@ -4,6 +4,7 @@
     <string name="hint_contraseña">contraseña</string>
     <string name="id">Id:</string>
     <string name="constraseña">Contraseña:</string>
+    <string name="olvidado">Olvidó su contraseña?:</string>
 </resources>
 
 

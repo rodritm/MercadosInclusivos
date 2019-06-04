@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/blanco">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -36,17 +37,27 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
 
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                </LinearLayout>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/id"
                     android:textSize="20sp"
-                    android:gravity="center"
+                    android:gravity="left"
+
                     />
 
                 <EditText
+                    android:id="@+id/et_id_usuario"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:hint="@string/hint_id"
@@ -66,12 +77,15 @@
                     android:layout_height="wrap_content"
                     android:text="@string/constraseña"
                     android:textSize="20sp"
+                    android:gravity="left"
                     />
 
                 <EditText
+                    android:id="@+id/et_pass_usuario"
+                    android:password="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:hint="@string/hint_contraseña"
+                    android:hint="Contraseña"
                     android:layout_marginLeft="40dp"
                     />
 
@@ -79,6 +93,15 @@
             </LinearLayout>
 
         </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="all"
+            android:textColorLink="@color/link"
+            android:text="@string/olvidado"
+            android:gravity="center"
+            />
 
         <Button
             android:layout_width="match_parent"
@@ -93,6 +116,8 @@
             android:text="Ingresar"
             android:textAllCaps="false"
             android:layout_margin="10dp"
+            android:background="@color/link"
+            android:textColor="@color/blanco"
             />
         <Button
             android:layout_width="wrap_content"
@@ -100,6 +125,8 @@
             android:text="Registrarse"
             android:textAllCaps="false"
             android:layout_margin="10dp"
+            android:background="@color/link"
+            android:textColor="@color/blanco"
             />
 
 
