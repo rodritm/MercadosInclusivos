@@ -93,11 +93,11 @@
                     android:padding="3dip"/>
             </TableRow>
             <TableRow>
-                <DatePicker
-                    android:id="@+id/reg_birthdate"
-                    android:layout_width="20dp"
-                    android:padding="3dip"
-                    />
+                <!--<DatePicker-->
+                    <!--android:id="@+id/reg_birthdate"-->
+                    <!--android:layout_width="20dp"-->
+                    <!--android:padding="3dip"-->
+                    <!--/>-->
                 <Spinner
                     android:id="@+id/reg_state"
                     android:layout_width="match_parent"
@@ -147,13 +147,13 @@
                     android:id="@+id/reg_email"
                     android:layout_width="wrap_content"
                     android:gravity="center"
-                    android:hint="@string/reg_email"
+                    android:hint="@string/reg_hint_email"
                     android:padding="3dip"/>
 
                 <EditText
                     android:id="@+id/reg_phone"
                     android:layout_width="wrap_content"
-                    android:hint="@string/reg_phone"
+                    android:hint="@string/reg_hint_phone"
                     android:gravity="center"
                     android:padding="3dip"/>
             </TableRow>
@@ -185,6 +185,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/button_continue"
                 android:background="@color/link"
+                android:layout_marginRight="30dp"
                 />
 
             <Button
