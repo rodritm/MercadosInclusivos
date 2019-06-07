@@ -5,6 +5,44 @@
     <string name="id">Id:</string>
     <string name="constraseña">Contraseña:</string>
     <string name="olvidado">Olvidó su contraseña?:</string>
+    <string name="title_activity_registro">Registro</string>
+
+    <string name="reg_title">Registro de usuario:</string>
+    <string name="reg_ci">Carnet de identidad:</string>
+    <string name="reg_name">Nombre:</string>
+    <string name="reg_lastname1">Primer apellido:</string>
+    <string name="reg_lastname2">Segundo apellido:</string>
+    <string name="reg_date">Fecha de nacimiento:</string>
+    <string name="reg_state">Estado civil:</string>
+    <string name="reg_gender">Género:</string>
+    <string name="reg_locate">Departamento:</string>
+    <string name="reg_email">Correo:</string>
+    <string name="reg_phone">Teléfono:</string>
+    <string name="reg_entry">Rubro principal:</string>
+    <string name="reg_password">Ingresar contraseña:</string>
+    <string name="reg_password2">Vuelva a ingresar contraseña:</string>
+
+    <!--Hints de formulario de registro-->
+
+    <string name="reg_hint_ci">4870689</string>
+    <string name="reg_hint_name">Juan</string>
+    <string name="reg_hint_lastname1">Perez:</string>
+    <string name="reg_hint_lastname2">Perez</string>
+    <string name="reg_hint_date">05/11/1964</string>
+    <string name="reg_hint_email">juanperez@gmail.com</string>
+    <string name="reg_hint_phone">70629182</string>
+    <string name="reg_hint_password">*******</string>
+    <string name="reg_hint_password2">*******</string>
+
+    <string name="state">Escoja una opción:</string>
+    <string-array name="states">
+        <item>Soltero</item>
+        <item>Casado</item>
+        <item>Viudo</item>
+        <item>Divorciado</item>
+    </string-array>
+
+
 </resources>
 
 
