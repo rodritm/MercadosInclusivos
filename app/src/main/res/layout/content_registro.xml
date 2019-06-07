@@ -42,10 +42,12 @@
             </TableRow>
             <TableRow>
                 <EditText
+                    android:id="@+id/reg_ci"
                     android:layout_width="wrap_content"
                     android:hint="@string/reg_hint_ci"
                     android:padding="3dip"/>
                 <EditText
+                    android:id="@+id/reg_name"
                     android:layout_width="wrap_content"
                     android:hint="@string/reg_hint_name"
                     android:gravity="center"
@@ -55,7 +57,7 @@
             <TableRow>
                 <TextView
                     android:layout_width="wrap_content"
-                    android:text="@string/reg_lastname1"
+                    android:text="@string/reg_hint_lastname1"
                     android:padding="3dip"
                     />
                 <TextView
@@ -66,10 +68,12 @@
             </TableRow>
             <TableRow>
                 <EditText
+                    android:id="@+id/reg_hint_lastname1"
                     android:layout_width="wrap_content"
                     android:hint="@string/reg_hint_lastname1"
                     android:padding="3dip"/>
                 <EditText
+                    android:id="@+id/reg_lastname2"
                     android:layout_width="wrap_content"
                     android:hint="@string/reg_hint_lastname2"
                     android:gravity="center"
@@ -79,7 +83,7 @@
             <TableRow>
                 <TextView
                     android:layout_width="wrap_content"
-                    android:text="@string/reg_date"
+                    android:text="@string/reg_birthdate"
                     android:padding="3dip"
                     />
                 <TextView
@@ -90,19 +94,107 @@
             </TableRow>
             <TableRow>
                 <DatePicker
+                    android:id="@+id/reg_birthdate"
                     android:layout_width="20dp"
                     android:padding="3dip"
                     />
                 <Spinner
-                    android:id="@+id/spinner1"
+                    android:id="@+id/reg_state"
                     android:layout_width="match_parent"
                     android:entries="@array/states"
                     android:prompt="@string/state" />
             </TableRow>
 
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/reg_gender"
+                    android:padding="3dip"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/reg_locate"
+                    android:gravity="center"
+                    android:padding="3dip"/>
+            </TableRow>
+            <TableRow>
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:entries="@array/genders"
+                    android:prompt="@string/gender" />
 
+                <EditText
+                    android:id="@+id/reg_locate"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:padding="3dip"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/reg_email"
+                    android:padding="3dip"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/reg_phone"
+                    android:gravity="center"
+                    android:padding="3dip"/>
+            </TableRow>
+            <TableRow>
+                <EditText
+                    android:id="@+id/reg_email"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:hint="@string/reg_email"
+                    android:padding="3dip"/>
+
+                <EditText
+                    android:id="@+id/reg_phone"
+                    android:layout_width="wrap_content"
+                    android:hint="@string/reg_phone"
+                    android:gravity="center"
+                    android:padding="3dip"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/reg_entry"
+                    android:padding="3dip"
+                    />
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:entries="@array/entries"
+                    android:prompt="@string/entry" />
+            </TableRow>
 
         </TableLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+
+            <Button
+                android:id="@+id/button_continue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_continue"
+                android:background="@color/link"
+                />
+
+            <Button
+                android:id="@+id/button_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_cancel"
+                android:background="@color/link"
+                />
+        </LinearLayout>
 
     </LinearLayout>
 

@@ -1,4 +1,6 @@
 <resources>
+
+    <!--Página de login-->
     <string name="app_name">MercadosInclusivos</string>
     <string name="hint_id">id</string>
     <string name="hint_contraseña">contraseña</string>
@@ -7,12 +9,14 @@
     <string name="olvidado">Olvidó su contraseña?:</string>
     <string name="title_activity_registro">Registro</string>
 
+    <!--Página de registro de usuario-->
+
     <string name="reg_title">Registro de usuario:</string>
     <string name="reg_ci">Carnet de identidad:</string>
     <string name="reg_name">Nombre:</string>
     <string name="reg_lastname1">Primer apellido:</string>
     <string name="reg_lastname2">Segundo apellido:</string>
-    <string name="reg_date">Fecha de nacimiento:</string>
+    <string name="reg_birthdate">Fecha de nacimiento:</string>
     <string name="reg_state">Estado civil:</string>
     <string name="reg_gender">Género:</string>
     <string name="reg_locate">Departamento:</string>
@@ -34,6 +38,7 @@
     <string name="reg_hint_password">*******</string>
     <string name="reg_hint_password2">*******</string>
 
+    <!--Combo box de estados civiles-->
     <string name="state">Escoja una opción:</string>
     <string-array name="states">
         <item>Soltero</item>
@@ -41,6 +46,30 @@
         <item>Viudo</item>
         <item>Divorciado</item>
     </string-array>
+
+    <!--Combo box de géneros-->
+    <string name="gender">Escoja un género:</string>
+    <string-array name="genders">
+        <item>Masculino</item>
+        <item>Femenino</item>
+    </string-array>
+
+    <!--Combo box de rubros-->
+    <string name="entry">Escoja un género:</string>
+    <string-array name="entries">
+        <item>Papa</item>
+        <item>Haba</item>
+        <item>Quinua</item>
+        <item>Durazno</item>
+        <item>Hortalizas</item>
+    </string-array>
+
+    <!--Botones de registro-->
+    <string name="button_continue">Continuar</string>
+    <string name="button_save">Guardar</string>
+    <string name="button_cancel">Cancelar</string>
+
+
 
 
 </resources>
