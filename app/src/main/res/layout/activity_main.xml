@@ -66,6 +66,8 @@
                     android:layout_height="wrap_content"
                     android:hint="@string/hint_id"
                     android:layout_marginLeft="40dp"
+                    android:numeric="integer"
+                    android:inputType="number"
                     />
 
 
@@ -117,6 +119,7 @@
             <!--android:background="@color/blanco"/>-->
 
         <Button
+            android:id="@+id/ini_botonIngresar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Ingresar"
@@ -126,6 +129,7 @@
             android:textColor="@color/blanco"
             />
         <Button
+            android:id="@+id/ini_botonRegistrarse"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Registrarse"

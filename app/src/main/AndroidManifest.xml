@@ -10,9 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".formulario_durazno1"
+            android:label="@string/title_activity_formulario_durazno1"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".formulario_haba1"
+            android:label="@string/title_activity_formulario_haba1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".formulario_quinua1"
+            android:label="@string/title_activity_formulario_quinua1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
             android:name=".formulario_papa2"
             android:label="@string/title_activity_formulario_papa2"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".formulario_papa1"
             android:label="@string/title_activity_formulario_papa1"

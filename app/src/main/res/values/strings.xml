@@ -153,7 +153,7 @@
 
     <!--Combo box de Municipios Haba-->
     <string name="municipality_bean">Escoja una variedad:</string>
-    <string-array name="municipalities__beans">
+    <string-array name="municipalities_beans">
         <item>Chaki</item>
         <item>Puma</item>
     </string-array>
@@ -186,10 +186,13 @@
         <item>2020-2021</item>
     </string-array>
     <string-array name="surfaces">
-        <item>Hectárea</item>
-        <item>Metros</item>
+        <item>Hectáreas</item>
+        <item>Metros Cuadrados</item>
     </string-array>
     <string name="title_activity_formulario_papa2">formulario_papa2</string>
+    <string name="title_activity_formulario_quinua1">formulario_quinua1</string>
+    <string name="title_activity_formulario_haba1">formulario_haba1</string>
+    <string name="title_activity_formulario_durazno1">formulario_durazno1</string>
 
 
 </resources>

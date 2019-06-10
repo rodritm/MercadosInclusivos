@@ -10,7 +10,7 @@
 
         <TextView
             android:layout_marginLeft="5dp"
-            android:text="Formulario Papa:"
+            android:text="Formulario Quinua:"
             android:textSize="25dp"
             android:textColor="@color/link"
             />
@@ -26,8 +26,8 @@
 
             <Spinner
                 android:layout_width="match_parent"
-                android:entries="@array/varieties_potatoes"
-                android:prompt="@string/variety_potatoe" />
+                android:entries="@array/varieties_quinoas"
+                android:prompt="@string/variety_quinoa" />
 
         </TableRow>
 
@@ -55,8 +55,8 @@
 
             <Spinner
                 android:layout_width="match_parent"
-                android:entries="@array/municipalities_potatoes"
-                android:prompt="@string/municipality_potatoe"/>
+                android:entries="@array/municipalities_quinoas"
+                android:prompt="@string/municipality_quinoa"/>
 
         </TableRow>
 
@@ -90,30 +90,30 @@
 
 
 
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_gravity="center">
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="@string/button_continue"
-                    android:background="@color/link"
-                    android:textColor="@color/blanco"
-                    android:layout_margin="10dp"/>
-            </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/button_continue"
+                android:background="@color/link"
+                android:textColor="@color/blanco"
+                android:layout_margin="10dp"/>
+        </LinearLayout>
 
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_gravity="center">
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/button_cancel"
-                    android:background="@color/colorAccent"
-                    android:textColor="@color/blanco"
-                    android:layout_margin="10dp"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/button_cancel"
+                android:background="@color/colorAccent"
+                android:textColor="@color/blanco"
+                android:layout_margin="10dp"/>
 
-            </LinearLayout>
+        </LinearLayout>
 
 
     </TableLayout>
