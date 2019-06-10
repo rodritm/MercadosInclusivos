@@ -64,12 +64,15 @@
         <item>Hortalizas</item>
     </string-array>
 
-    <!--Botones de registro-->
+    <!--Botones de registro/pantalla de registro-->
     <string name="button_continue">Continuar</string>
     <string name="button_save">Guardar</string>
     <string name="button_cancel">Cancelar</string>
-
-
+    <string name="title_activity_registro_password">Registro_password</string>
+    <string name="select_id">ID:</string>
+    <string name="select_password">Seleccionar contraseña</string>
+    <string name="select_password2">Volver a ingresar contraseña</string>
+    <string name="title_activity_pantalla__inicial">Pantalla_Inicial</string>
 
 
 </resources>
