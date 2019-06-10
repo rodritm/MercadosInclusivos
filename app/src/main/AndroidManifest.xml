@@ -10,9 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".formulario_papa2"
+            android:label="@string/title_activity_formulario_papa2"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".formulario_papa1"
+            android:label="@string/title_activity_formulario_papa1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
             android:name=".Pantalla_Inicial"
             android:label="@string/title_activity_pantalla__inicial"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Registro_password"
             android:label="@string/title_activity_registro_password"

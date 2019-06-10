@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:text="Formulario Papa:"
+            android:textSize="25dp"
+            android:textColor="@color/link"
+            />
+
+        <TableRow
+            android:layout_margin="20dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/form_variety"
+                android:layout_marginRight="100dp"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:entries="@array/varieties_potatoes"
+                android:prompt="@string/variety_potatoe" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_margin="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/form_cycle"
+                android:layout_marginRight="100dp"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:entries="@array/cycles" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_margin="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/form_municipality"
+                android:layout_marginRight="100dp"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:entries="@array/municipalities_potatoes"
+                android:prompt="@string/municipality_potatoe"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_margin="20dp">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/form_surface"
+                    android:layout_marginRight="10dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:entries="@array/surfaces" />
+
+        </TableRow>
+
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/button_continue"
+                    android:background="@color/link"
+                    android:textColor="@color/blanco"
+                    android:layout_margin="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/button_cancel"
+                    android:background="@color/colorAccent"
+                    android:textColor="@color/blanco"
+                    android:layout_margin="10dp"/>
+
+            </LinearLayout>
+
+
+    </TableLayout>
+
+</ScrollView>
