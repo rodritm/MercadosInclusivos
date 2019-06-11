@@ -1,13 +1,22 @@
 <resources>
 
     <string name="app_name">Mercados Inclusivos</string>
+    <string name="title_activity_registro">Registro</string>
+    <string name="title_activity_registro_password">Registro_password</string>
+    <string name="title_activity_pantalla__inicial">Pantalla_Inicial</string>
+    <string name="title_activity_formulario_papa1">formulario_papa1</string>
+    <string name="title_activity_formulario_papa2">formulario_papa2</string>
+    <string name="title_activity_formulario_quinua1">formulario_quinua1</string>
+    <string name="title_activity_formulario_haba1">formulario_haba1</string>
+    <string name="title_activity_formulario_durazno1">formulario_durazno1</string>
+
     <!--Página de login-->
     <string name="hint_id">id</string>
     <string name="hint_contraseña">contraseña</string>
     <string name="id">Id:</string>
     <string name="constraseña">Contraseña:</string>
     <string name="olvidado">Olvidó su contraseña?:</string>
-    <string name="title_activity_registro">Registro</string>
+
 
     <!--Página de registro de usuario-->
 
@@ -68,12 +77,11 @@
     <string name="button_continue">Continuar</string>
     <string name="button_save">Guardar</string>
     <string name="button_cancel">Cancelar</string>
-    <string name="title_activity_registro_password">Registro_password</string>
     <string name="select_id">ID:</string>
     <string name="select_password">Seleccionar contraseña</string>
     <string name="select_password2">Volver a ingresar contraseña</string>
-    <string name="title_activity_pantalla__inicial">Pantalla_Inicial</string>
-    <string name="title_activity_formulario_papa1">formulario_papa1</string>
+
+
 
     <!--++++++++++VARIEDADES+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
@@ -113,28 +121,28 @@
     <!--++++++++++TIPOS+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
     <!--Combo box de tipos de Papa-->
-    <string name="type_potatoe">Escoja una variedad:</string>
+    <string name="type_potatoe">Escoja un tipo:</string>
     <string-array name="types_potatoes">
         <item>Fresca</item>
         <item>Chuño Tunta</item>
     </string-array>
 
     <!--Combo box de variedades Haba-->
-    <string name="type_bean">Escoja una variedad:</string>
+    <string name="type_bean">Escoja un tipo:</string>
     <string-array name="types__beans">
         <item>Seca</item>
         <item>Envainada</item>
     </string-array>
 
     <!--Combo box de variedades Durazno-->
-    <string name="type_peach">Escoja una variedad:</string>
+    <string name="type_peach">Escoja un tipo:</string>
     <string-array name="types_peaches">
         <item>Fresco</item>
         <item>Transformado</item>
     </string-array>
 
     <!--Combo box de variedades Quinoa-->
-    <string name="type_quinoa">Escoja una variedad:</string>
+    <string name="type_quinoa">Escoja un tipo:</string>
     <string-array name="types_quinoas">
         <item>Local</item>
         <item>Exportación</item>
@@ -142,7 +150,7 @@
 
     <!--++++++++++MUNICIPIOS+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
     <!--Combo box de Municipios de Papa-->
-    <string name="municipality_potatoe">Escoja una variedad:</string>
+    <string name="municipality_potatoe">Escoja unun municipio:</string>
     <string-array name="municipalities_potatoes">
         <item>Viacha</item>
         <item>Patacamaya</item>
@@ -152,14 +160,14 @@
     </string-array>
 
     <!--Combo box de Municipios Haba-->
-    <string name="municipality_bean">Escoja una variedad:</string>
+    <string name="municipality_bean">Escoja unun municipio:</string>
     <string-array name="municipalities_beans">
         <item>Chaki</item>
         <item>Puma</item>
     </string-array>
 
     <!--Combo box de Municipios Durazno-->
-    <string name="municipality_peach">Escoja una variedad:</string>
+    <string name="municipality_peach">Escoja un municipio:</string>
     <string-array name="municipalities_peaches">
         <item>Luribay</item>
         <item>Sapahaqui</item>
@@ -167,7 +175,7 @@
     </string-array>
 
     <!--Combo box de Municipios Quinoa-->
-    <string name="municipality_quinoa">Escoja una variedad:</string>
+    <string name="municipality_quinoa">Escoja un municipio:</string>
     <string-array name="municipalities_quinoas">
         <item>Challapata</item>
         <item>Santiago de Huari</item>
@@ -179,6 +187,12 @@
     <string name="form_cycle">2.Ciclo:</string>
     <string name="form_municipality">3.Municipio:</string>
     <string name="form_surface">4.Superficie:</string>
+    <string name="form_irrigation">5.Riego:</string>
+    <string name="form_type">6.Tipo:</string>
+    <string name="form_sale">7.Tipo de venta:</string>
+    <string name="form_qualification">8.Calificación del año agrícola:</string>
+
+
     <string-array name="cycles">
         <item>2017-2018</item>
         <item>2018-2019</item>
@@ -189,10 +203,31 @@
         <item>Hectáreas</item>
         <item>Metros Cuadrados</item>
     </string-array>
-    <string name="title_activity_formulario_papa2">formulario_papa2</string>
-    <string name="title_activity_formulario_quinua1">formulario_quinua1</string>
-    <string name="title_activity_formulario_haba1">formulario_haba1</string>
-    <string name="title_activity_formulario_durazno1">formulario_durazno1</string>
+    <string-array name="irrigation">
+        <item>Si</item>
+        <item>No</item>
+    </string-array>
+    <string-array name="sale_type">
+        <item>Detallista</item>
+        <item>Acopiador</item>
+    </string-array>
+    <string-array name="qualification">
+        <item>Bueno</item>
+        <item>Regular</item>
+        <item>Malo</item>
+    </string-array>
+
+
+    <!--Matriz de productos-->
+    <string name="quality">Calidad</string>
+    <string name="volume">Total Volumen Cosechado</string>
+    <string name="sell_volume">Volumen destinado a ventas</string>
+    <string name="price">Precio</string>
+    <string name="quality1">1ra</string>
+    <string name="quality2">2da</string>
+    <string name="quality3">3ra</string>
+    <string name="quality4">4ta</string>
+    <string name="quality5">Descarte</string>
 
 
 </resources>

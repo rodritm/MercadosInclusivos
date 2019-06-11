@@ -50,19 +50,21 @@
                     android:hint="@string/reg_hint_ci"
                     android:padding="3dip"
                     android:numeric="integer"
-                    android:inputType="number"/>
+                    android:inputType="number"
+                    />
                 <EditText
                     android:id="@+id/reg_name"
                     android:layout_width="wrap_content"
                     android:hint="@string/reg_hint_name"
                     android:gravity="center"
-                    android:padding="3dip"/>
+                    android:padding="3dip"
+                    android:singleLine="true"/>
             </TableRow>
 
             <TableRow android:paddingTop="15sp">
                 <TextView
                     android:layout_width="wrap_content"
-                    android:text="@string/reg_hint_lastname1"
+                    android:text="@string/reg_lastname1"
                     android:padding="3dip"
                     />
                 <TextView
@@ -162,7 +164,7 @@
                     android:gravity="center"
                     android:padding="3dip"
                     android:numeric="integer"
-                    android:inputType="number"/>
+                    android:inputType="phone"/>
             </TableRow>
 
             <TableRow android:paddingTop="15sp">
@@ -219,7 +221,8 @@
                 android:text="@string/button_continue"
                 android:background="@color/link"
                 android:textColor="@color/blanco"
-                android:layout_margin="10dp"/>
+                android:layout_margin="10dp"
+                android:onClick="resgistro"/>
         </LinearLayout>
 
         <LinearLayout

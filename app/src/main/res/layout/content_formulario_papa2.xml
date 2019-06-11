@@ -1,11 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".formulario_papa2"
-    tools:showIn="@layout/activity_formulario_papa2">
+    android:layout_height="match_parent">
 
-</android.support.constraint.ConstraintLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:text="Formulario Papa:"
+            android:textSize="25dp"
+            android:textColor="@color/link"
+            />
+
+        <TableRow
+            android:layout_margin="20dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/form_irrigation"
+                android:layout_marginRight="100dp"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:entries="@array/irrigation"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_margin="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/form_type"
+                android:layout_marginRight="100dp"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:entries="@array/types_potatoes" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_margin="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/form_sale"
+                android:layout_marginRight="100dp"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:entries="@array/sale_type" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_margin="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/form_qualification"
+                android:layout_marginRight="100dp"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:entries="@array/qualification" />
+
+        </TableRow>
+
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/button_continue"
+                android:background="@color/link"
+                android:textColor="@color/blanco"
+                android:layout_margin="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/button_cancel"
+                android:background="@color/colorAccent"
+                android:textColor="@color/blanco"
+                android:layout_margin="10dp"/>
+
+        </LinearLayout>
+
+
+    </TableLayout>
+
+</ScrollView>
