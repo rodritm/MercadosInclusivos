@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    >
 
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1">
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal">
 
         <TextView
             android:layout_marginLeft="5dp"
@@ -21,11 +23,13 @@
 
             <TextView
                 android:layout_width="wrap_content"
-                android:text="@string/form_irrigation"
-                android:layout_marginRight="100dp"/>
+                android:text="@string/form_sale"
+                android:layout_marginRight="100dp"
+                android:textAllCaps="true"
+                android:textColor="@color/negro"/>
 
             <Spinner
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:entries="@array/irrigation"
                 />
 
@@ -36,28 +40,145 @@
 
             <TextView
                 android:layout_width="wrap_content"
-                android:text="@string/form_type"
-                android:layout_marginRight="100dp"/>
+                android:text="Seleccione una unidad de cosecha:"
+                android:layout_marginRight="100dp"
+                android:textAllCaps="true"
+                android:textColor="@color/negro"/>
 
             <Spinner
-                android:layout_width="match_parent"
-                android:entries="@array/types_potatoes" />
-
-        </TableRow>
-
-        <TableRow
-            android:layout_margin="20dp">
-
-            <TextView
                 android:layout_width="wrap_content"
-                android:text="@string/form_sale"
-                android:layout_marginRight="100dp"/>
-
-            <Spinner
-                android:layout_width="match_parent"
-                android:entries="@array/sale_type" />
+                android:entries="@array/unity"
+                />
 
         </TableRow>
+
+        <!--AQUI VA LA MATRIZ-->
+
+            <TableLayout
+                android:outlineSpotShadowColor="@color/negro"
+                android:outlineAmbientShadowColor="@color/negro">
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Calidad"
+                        android:textColor="@color/negro"
+                        android:textAllCaps="true"
+                        android:padding="2dp"
+                        android:layout_margin="5dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Total Volumen Cosechado"
+                        android:textColor="@color/negro"
+                        android:textAllCaps="true"
+                        android:padding="2dp"
+                        android:layout_margin="5dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Volumen destinado a Ventas"
+                        android:textColor="@color/negro"
+                        android:textAllCaps="true"
+                        android:padding="2dp"
+                        android:layout_margin="5dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Precio"
+                        android:textColor="@color/negro"
+                        android:textAllCaps="true"
+                        android:padding="2dp"
+                        android:layout_margin="5dp"/>
+
+                </TableRow>
+                <TableRow>
+                    <View
+                        android:layout_height="2dip"
+                        android:background="#FF909090" />
+                    <View
+                        android:layout_height="2dip"
+                        android:background="#FF909090" />
+
+                    <View
+                        android:layout_height="2dip"
+                        android:background="#FF909090" />
+
+                    <View
+                        android:layout_height="2dip"
+                        android:background="#FF909090" />
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:textAllCaps="true"
+                        android:textColor="@color/negro"
+                        android:text="primera:"/>
+                    <EditText
+                        android:hint="0"/>
+                    <EditText
+                        android:hint="0"/>
+                    <EditText
+                        android:hint="0"/>
+
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:textAllCaps="true"
+                        android:textColor="@color/negro"
+                        android:text="segunda:"/>
+                    <EditText
+                        android:hint="0"/>
+                    <EditText
+                        android:hint="0"/>
+                    <EditText
+                        android:hint="0"/>
+
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:textAllCaps="true"
+                        android:textColor="@color/negro"
+                        android:text="tercera:"/>
+                    <EditText
+                        android:hint="0"/>
+                    <EditText
+                        android:hint="0"/>
+                    <EditText
+                        android:hint="0"/>
+
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:textAllCaps="true"
+                        android:textColor="@color/negro"
+                        android:text="cuarta:"/>
+                    <EditText
+                        android:hint="0"/>
+                    <EditText
+                        android:hint="0"/>
+                    <EditText
+                        android:hint="0"/>
+
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:textAllCaps="true"
+                        android:textColor="@color/negro"
+                        android:text="descarte:"/>
+                    <EditText
+                        android:hint="0"/>
+                    <EditText
+                        android:hint="0"/>
+                    <EditText
+                        android:hint="0"/>
+
+                </TableRow>
+
+
+            </TableLayout>
 
         <TableRow
             android:layout_margin="20dp">
@@ -65,7 +186,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:text="@string/form_qualification"
-                android:layout_marginRight="100dp"/>
+                android:layout_marginRight="100dp"
+                android:textAllCaps="true"
+                android:textColor="@color/negro"/>
 
             <Spinner
                 android:layout_width="match_parent"
@@ -74,31 +197,29 @@
         </TableRow>
 
 
-
-
         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:orientation="horizontal"
-            android:layout_gravity="center">
+            android:gravity="center">
+
             <Button
-                android:layout_width="match_parent"
+                android:id="@+id/reg_botonContinuar"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="@string/button_continue"
-                android:background="@color/link"
+                android:text="@string/button_save"
+                android:layout_margin="20dp"
                 android:textColor="@color/blanco"
-                android:layout_margin="10dp"/>
-        </LinearLayout>
+                android:background="@color/link" />
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_gravity="center">
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:id="@+id/reg_botonCancelar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
                 android:text="@string/button_cancel"
-                android:background="@color/colorAccent"
+                android:layout_margin="20dp"
                 android:textColor="@color/blanco"
-                android:layout_margin="10dp"/>
-
+                android:background="@color/colorAccent"/>
         </LinearLayout>
 
 

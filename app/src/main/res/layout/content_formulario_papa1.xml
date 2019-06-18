@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/blanco">
 
     <TableLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_weight="1">
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal">
 
         <TextView
             android:layout_marginLeft="5dp"
@@ -15,14 +17,23 @@
             android:textColor="@color/link"
             />
 
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+        </LinearLayout>
+
         <TableRow
-            android:layout_margin="20dp"
-            >
+            android:layout_margin="10dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:text="@string/form_variety"
-                android:layout_marginRight="100dp"/>
+                android:textAllCaps="true"
+                android:textColor="@color/negro"/>
 
             <Spinner
                 android:layout_width="match_parent"
@@ -37,7 +48,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:text="@string/form_cycle"
-                android:layout_marginRight="100dp"/>
+                android:textAllCaps="true"
+                android:textColor="@color/negro"/>
 
             <Spinner
                 android:layout_width="match_parent"
@@ -45,18 +57,18 @@
 
         </TableRow>
 
-        <TableRow
-            android:layout_margin="20dp">
+        <TableRow android:layout_margin="20dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:text="@string/form_municipality"
-                android:layout_marginRight="100dp"/>
+                android:textAllCaps="true"
+                android:textColor="@color/negro" />
 
             <Spinner
                 android:layout_width="match_parent"
                 android:entries="@array/municipalities_potatoes"
-                android:prompt="@string/municipality_potatoe"/>
+                android:prompt="@string/municipality_potatoe" />
 
         </TableRow>
 
@@ -71,10 +83,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/form_surface"
-                    android:layout_marginRight="10dp"/>
+                    android:textAllCaps="true"
+                    android:textColor="@color/negro"/>
 
                 <EditText
-                    android:layout_width="match_parent"
+                    android:layout_width="30dp"
                     android:layout_height="wrap_content"
                     android:numeric="integer"
                     android:inputType="number"/>
@@ -88,32 +101,78 @@
 
         </TableRow>
 
-
-
+        <TableRow
+            android:layout_margin="20dp">
             <LinearLayout
                 android:orientation="horizontal"
-                android:layout_gravity="center">
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="@string/button_continue"
-                    android:background="@color/link"
-                    android:textColor="@color/blanco"
-                    android:layout_margin="10dp"/>
-            </LinearLayout>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_gravity="center">
-                <Button
-                    android:layout_width="match_parent"
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/button_cancel"
-                    android:background="@color/colorAccent"
-                    android:textColor="@color/blanco"
-                    android:layout_margin="10dp"/>
+                    android:text="@string/form_irrigation"
+                    android:textAllCaps="true"
+                    android:textColor="@color/negro"/>
+
 
             </LinearLayout>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:entries="@array/irrigation" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_margin="20dp">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/form_type"
+                    android:textAllCaps="true"
+                    android:textColor="@color/negro"/>
+
+            </LinearLayout>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:entries="@array/types_potatoes" />
+
+        </TableRow>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/regpass_botonContinuar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/button_continue"
+                android:layout_margin="20dp"
+                android:textColor="@color/blanco"
+                android:background="@color/link" />
+
+            <Button
+                android:id="@+id/regpass_botonCancelar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/button_cancel"
+                android:layout_margin="20dp"
+                android:textColor="@color/blanco"
+                android:background="@color/colorAccent"/>
+        </LinearLayout>
+
+
+
 
 
     </TableLayout>

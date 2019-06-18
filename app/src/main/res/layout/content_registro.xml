@@ -36,12 +36,16 @@
                     android:layout_width="wrap_content"
                     android:text="@string/reg_ci"
                     android:padding="3dip"
+                    android:textAllCaps="true"
+                    android:textColor="@color/negro"
                     />
                 <TextView
                     android:layout_width="wrap_content"
                     android:text="@string/reg_name"
                     android:gravity="center"
-                    android:padding="3dip"/>
+                    android:padding="3dip"
+                    android:textAllCaps="true"
+                    android:textColor="@color/negro"/>
             </TableRow>
             <TableRow android:paddingTop="15sp">
                 <EditText
@@ -66,12 +70,16 @@
                     android:layout_width="wrap_content"
                     android:text="@string/reg_lastname1"
                     android:padding="3dip"
+                    android:textAllCaps="true"
+                    android:textColor="@color/negro"
                     />
                 <TextView
                     android:layout_width="wrap_content"
                     android:text="@string/reg_lastname2"
                     android:gravity="center"
-                    android:padding="3dip"/>
+                    android:padding="3dip"
+                    android:textAllCaps="true"
+                    android:textColor="@color/negro"/>
             </TableRow>
             <TableRow android:paddingTop="15sp">
                 <EditText
@@ -92,12 +100,16 @@
                     android:layout_width="wrap_content"
                     android:text="@string/reg_birthdate"
                     android:padding="3dip"
+                    android:textAllCaps="true"
+                    android:textColor="@color/negro"
                     />
                 <TextView
                     android:layout_width="wrap_content"
                     android:text="@string/reg_state"
                     android:gravity="center"
-                    android:padding="3dip"/>
+                    android:padding="3dip"
+                    android:textAllCaps="true"
+                    android:textColor="@color/negro"/>
             </TableRow>
             <TableRow android:paddingTop="15sp">
                 <!--<DatePicker-->
@@ -117,12 +129,15 @@
                     android:layout_width="wrap_content"
                     android:text="@string/reg_gender"
                     android:padding="3dip"
-                    />
+                    android:textAllCaps="true"
+                    android:textColor="@color/negro" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:text="@string/reg_locate"
                     android:gravity="center"
-                    android:padding="3dip"/>
+                    android:padding="3dip"
+                    android:textAllCaps="true"
+                    android:textColor="@color/negro"/>
             </TableRow>
             <TableRow android:paddingTop="15sp">
                 <Spinner
@@ -142,12 +157,15 @@
                     android:layout_width="wrap_content"
                     android:text="@string/reg_email"
                     android:padding="3dip"
-                    />
+                    android:textAllCaps="true"
+                    android:textColor="@color/negro" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:text="@string/reg_phone"
                     android:gravity="center"
-                    android:padding="3dip"/>
+                    android:padding="3dip"
+                    android:textAllCaps="true"
+                    android:textColor="@color/negro"/>
             </TableRow>
             <TableRow android:paddingTop="15sp">
                 <EditText
@@ -172,7 +190,8 @@
                     android:layout_width="wrap_content"
                     android:text="@string/reg_entry"
                     android:padding="3dip"
-                    />
+                    android:textAllCaps="true"
+                    android:textColor="@color/negro"/>
                 <Spinner
                     android:layout_width="match_parent"
                     android:entries="@array/entries"
@@ -210,36 +229,62 @@
         <!--</LinearLayout>-->
 
         <LinearLayout
-            android:layout_height="match_parent"
             android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:orientation="horizontal"
-            android:layout_gravity="center">
+            android:gravity="center">
+
             <Button
                 android:id="@+id/reg_botonContinuar"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="@string/button_continue"
-                android:background="@color/link"
+                android:layout_margin="20dp"
                 android:textColor="@color/blanco"
-                android:layout_margin="10dp"
-                android:onClick="resgistro"/>
-        </LinearLayout>
+                android:background="@color/link" />
 
-        <LinearLayout
-            android:layout_height="match_parent"
-            android:layout_width="match_parent"
-            android:orientation="horizontal"
-            android:layout_gravity="center">
             <Button
                 android:id="@+id/reg_botonCancelar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
                 android:text="@string/button_cancel"
-                android:background="@color/colorAccent"
+                android:layout_margin="20dp"
                 android:textColor="@color/blanco"
-                android:layout_margin="10dp"/>
-
+                android:background="@color/colorAccent"/>
         </LinearLayout>
+
+
+        <!--<LinearLayout-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_gravity="center">-->
+            <!--<Button-->
+                <!--android:id="@+id/reg_botonContinuar"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:text="@string/button_continue"-->
+                <!--android:background="@color/link"-->
+                <!--android:textColor="@color/blanco"-->
+                <!--android:layout_margin="10dp"-->
+                <!--android:onClick="resgistro"/>-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_gravity="center">-->
+            <!--<Button-->
+                <!--android:id="@+id/reg_botonCancelar"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/button_cancel"-->
+                <!--android:background="@color/colorAccent"-->
+                <!--android:textColor="@color/blanco"-->
+                <!--android:layout_margin="10dp"/>-->
+
+        <!--</LinearLayout>-->
 
     </LinearLayout>
 

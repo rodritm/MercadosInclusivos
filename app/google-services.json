@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "950833899408",
+    "firebase_url": "https://swisscontact-339ec.firebaseio.com",
+    "project_id": "swisscontact-339ec",
+    "storage_bucket": "swisscontact-339ec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:950833899408:android:1d9bf91fb885793d",
+        "android_client_info": {
+          "package_name": "com.example.mercadosinclusivos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "950833899408-odbaqsbhsadkrueidikmd8kg96kol7en.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mercadosinclusivos",
+            "certificate_hash": "a0feec84a68fb5b27902446409372240e62ece1f"
+          }
+        },
+        {
+          "client_id": "950833899408-ve0vvshal23f09l506q3cvv8ee2incqg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0mQjJY1nj0NoVUgyPqmjHEpJEsTfa67A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "950833899408-ve0vvshal23f09l506q3cvv8ee2incqg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
