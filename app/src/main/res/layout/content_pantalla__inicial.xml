@@ -37,6 +37,7 @@
             android:layout_margin="20dp">
 
             <ImageButton
+                android:id="@+id/ini_editar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@mipmap/ic_launcher"
@@ -44,6 +45,7 @@
                 android:layout_marginRight="10dp" />
 
             <ImageButton
+                android:id="@+id/ini_formulario"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@mipmap/ic_launcher"
@@ -62,6 +64,7 @@
             android:layout_margin="20dp">
 
             <ImageButton
+                android:id="@+id/ini_ayuda"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@mipmap/ic_launcher"
@@ -69,6 +72,7 @@
                 android:layout_marginRight="10dp"/>
 
             <ImageButton
+                android:id="@+id/ini_salir"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@mipmap/ic_launcher"

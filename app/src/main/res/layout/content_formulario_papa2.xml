@@ -2,57 +2,65 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
+    android:background="@color/blanco"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginLeft="2dp">
 
-    <TableLayout
+    <HorizontalScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="center_horizontal"
-        android:gravity="center_horizontal">
+        android:layout_height="match_parent">
 
-        <TextView
-            android:layout_marginLeft="5dp"
-            android:text="Formulario Papa:"
-            android:textSize="25dp"
-            android:textColor="@color/link"
-            />
-
-        <TableRow
-            android:layout_margin="20dp"
-            >
+        <TableLayout
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:paddingLeft="2dp">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:text="@string/form_sale"
-                android:layout_marginRight="100dp"
-                android:textAllCaps="true"
-                android:textColor="@color/negro"/>
-
-            <Spinner
-                android:layout_width="wrap_content"
-                android:entries="@array/irrigation"
+                android:layout_marginLeft="5dp"
+                android:text="Formulario Papa:"
+                android:textSize="25dp"
+                android:textColor="@color/link"
                 />
 
-        </TableRow>
+            <TableRow
+                android:layout_margin="20dp"
+                >
 
-        <TableRow
-            android:layout_margin="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/form_sale"
+                    android:layout_marginRight="100dp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/negro"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:text="Seleccione una unidad de cosecha:"
-                android:layout_marginRight="100dp"
-                android:textAllCaps="true"
-                android:textColor="@color/negro"/>
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:entries="@array/irrigation"
+                    />
 
-            <Spinner
-                android:layout_width="wrap_content"
-                android:entries="@array/unity"
-                />
+            </TableRow>
 
-        </TableRow>
+            <TableRow
+                android:layout_margin="20dp">
 
-        <!--AQUI VA LA MATRIZ-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Seleccione una unidad de cosecha:"
+                    android:layout_marginRight="100dp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/negro"/>
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:entries="@array/unity"
+                    />
+
+            </TableRow>
+
+            <!--AQUI VA LA MATRIZ-->
 
             <TableLayout
                 android:outlineSpotShadowColor="@color/negro"
@@ -117,11 +125,14 @@
                         android:textColor="@color/negro"
                         android:text="primera:"/>
                     <EditText
-                        android:hint="0"/>
+                        android:hint="0"
+                        android:inputType="numberDecimal"/>
                     <EditText
-                        android:hint="0"/>
+                        android:hint="0"
+                        android:inputType="numberDecimal"/>
                     <EditText
-                        android:hint="0"/>
+                        android:hint="0"
+                        android:inputType="numberDecimal"/>
 
                 </TableRow>
                 <TableRow>
@@ -130,11 +141,14 @@
                         android:textColor="@color/negro"
                         android:text="segunda:"/>
                     <EditText
-                        android:hint="0"/>
+                        android:hint="0"
+                        android:inputType="numberDecimal"/>
                     <EditText
-                        android:hint="0"/>
+                        android:hint="0"
+                        android:inputType="numberDecimal"/>
                     <EditText
-                        android:hint="0"/>
+                        android:hint="0"
+                        android:inputType="numberDecimal"/>
 
                 </TableRow>
                 <TableRow>
@@ -143,11 +157,14 @@
                         android:textColor="@color/negro"
                         android:text="tercera:"/>
                     <EditText
-                        android:hint="0"/>
+                        android:hint="0"
+                        android:inputType="numberDecimal"/>
                     <EditText
-                        android:hint="0"/>
+                        android:hint="0"
+                        android:inputType="numberDecimal"/>
                     <EditText
-                        android:hint="0"/>
+                        android:hint="0"
+                        android:inputType="numberDecimal"/>
 
                 </TableRow>
                 <TableRow>
@@ -156,11 +173,14 @@
                         android:textColor="@color/negro"
                         android:text="cuarta:"/>
                     <EditText
-                        android:hint="0"/>
+                        android:hint="0"
+                        android:inputType="numberDecimal"/>
                     <EditText
-                        android:hint="0"/>
+                        android:hint="0"
+                        android:inputType="numberDecimal"/>
                     <EditText
-                        android:hint="0"/>
+                        android:hint="0"
+                        android:inputType="numberDecimal"/>
 
                 </TableRow>
                 <TableRow>
@@ -169,60 +189,66 @@
                         android:textColor="@color/negro"
                         android:text="descarte:"/>
                     <EditText
-                        android:hint="0"/>
+                        android:hint="0"
+                        android:inputType="numberDecimal"/>
                     <EditText
-                        android:hint="0"/>
+                        android:hint="0"
+                        android:inputType="numberDecimal"/>
                     <EditText
-                        android:hint="0"/>
+                        android:hint="0"
+                        android:inputType="numberDecimal"/>
 
                 </TableRow>
 
 
             </TableLayout>
 
-        <TableRow
-            android:layout_margin="20dp">
+            <TableRow
+                android:layout_margin="20dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:text="@string/form_qualification"
-                android:layout_marginRight="100dp"
-                android:textAllCaps="true"
-                android:textColor="@color/negro"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/form_qualification"
+                    android:layout_marginRight="100dp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/negro"/>
 
-            <Spinner
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:entries="@array/qualification" />
+
+            </TableRow>
+
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:entries="@array/qualification" />
-
-        </TableRow>
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:gravity="center">
-
-            <Button
-                android:id="@+id/reg_botonContinuar"
-                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="@string/button_save"
-                android:layout_margin="20dp"
-                android:textColor="@color/blanco"
-                android:background="@color/link" />
+                android:orientation="horizontal"
+                android:gravity="center">
 
-            <Button
-                android:id="@+id/reg_botonCancelar"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="@string/button_cancel"
-                android:layout_margin="20dp"
-                android:textColor="@color/blanco"
-                android:background="@color/colorAccent"/>
-        </LinearLayout>
+                <Button
+                    android:id="@+id/formpapa2_botonGuardar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/button_save"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/blanco"
+                    android:background="@color/link" />
+
+                <Button
+                    android:id="@+id/formpapa2_botonCancelar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/button_cancel"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/blanco"
+                    android:background="@color/colorAccent"/>
+            </LinearLayout>
 
 
-    </TableLayout>
+        </TableLayout>
+
+    </HorizontalScrollView>
+
 
 </ScrollView>

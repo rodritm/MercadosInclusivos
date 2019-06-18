@@ -5,6 +5,8 @@
     android:background="@color/blanco">
 
     <TableLayout
+        android:focusable="false"
+        android:focusableInTouchMode="true"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="center_horizontal"
@@ -153,7 +155,7 @@
             android:gravity="center">
 
             <Button
-                android:id="@+id/regpass_botonContinuar"
+                android:id="@+id/formpapa1_botonContinuar"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="@string/button_continue"
@@ -162,7 +164,7 @@
                 android:background="@color/link" />
 
             <Button
-                android:id="@+id/regpass_botonCancelar"
+                android:id="@+id/formpapa1_botonCancelar"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="@string/button_cancel"

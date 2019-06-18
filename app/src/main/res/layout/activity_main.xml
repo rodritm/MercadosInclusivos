@@ -4,9 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/blanco"
+    android:windowSoftInputMode="stateHidden">
     >
 
     <LinearLayout
+        android:focusable="false"
+        android:focusableInTouchMode="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -65,8 +68,7 @@
                         android:layout_marginLeft="40dp"
                         android:numeric="integer"
                         android:inputType="number"
-                        android:singleLine="true"
-                        />
+                        android:singleLine="true" />
 
 
                 </LinearLayout>
@@ -96,8 +98,7 @@
                     android:layout_height="wrap_content"
                     android:hint="@string/hint_contraseña"
                     android:layout_marginLeft="40dp"
-                    android:singleLine="true"
-                    />
+                    android:singleLine="true" />
 
 
             </LinearLayout>

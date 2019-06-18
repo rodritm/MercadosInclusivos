@@ -18,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-
         Button registrarse = (Button) findViewById(R.id.ini_botonRegistrarse);
         registrarse.setOnClickListener(new View.OnClickListener() {
             @Override
